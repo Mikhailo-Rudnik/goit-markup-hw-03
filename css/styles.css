@@ -1,0 +1,256 @@
+:root {
+  --acctnt-color: #2196f3;
+  --logo-studio-header-color: #000000;
+  --title-black-color: #212121;
+  --contacts-features-text-color: #757575;
+  --hero-studio-footer-text-color: #ffffff;
+  --hero-bcg-color-footer: #2f303a;
+  --hero-button-active: #188ce8;
+  --features-bcg-color: #f5f5f5;
+  --team-bcg-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--hero-studio-footer-text-color);
+  color: var(--title-black-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* header */
+
+.logo {
+  color: var(--acctnt-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-studioheader {
+  color: var(--logo-studio-header-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.nav-link {
+  color: inherit;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-site .current,
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--acctnt-color);
+}
+
+.mail,
+.tel {
+  color: var(--contacts-features-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Герой */
+.hero {
+  background-color: var(--hero-bcg-color-footer);
+}
+
+.hero-title {
+  color: var(--hero-studio-footer-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-button-active);
+}
+
+/* Наші переваги */
+
+.features {
+  background-color: var(--features-bcg-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--contacts-features-text-color);
+
+  line-height: 1.71;
+}
+
+/* Чим ми займаємося*/
+.work {
+  background-color: var(--features-bcg-color);
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Команда */
+.team {
+  background-color: var(--team-bcg-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-job {
+  color: var(--contacts-features-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--hero-bcg-color-footer);
+}
+
+.logo-studiofooter {
+  color: var(--hero-studio-footer-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.address {
+  font-style: normal;
+}
+
+.google {
+  color: var(--hero-studio-footer-text-color);
+
+  line-height: 1.71;
+}
+
+.mail-address,
+.tel-address {
+  color: var(--footer-contacts-color);
+
+  line-height: 1.71;
+}
+
+.google:hover,
+.google:focus,
+.mail-address:hover,
+.mail-address:focus,
+.tel-address:hover,
+.tel-address:focus {
+  color: var(--acctnt-color);
+}
+
+/* ПОРТФОЛІО */
+
+.button {
+  background-color: var(--team-bcg-color);
+  color: inherit;
+
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.button.current,
+.button:hover,
+.button:focus {
+  background-color: var(--acctnt-color);
+  color: var(--hero-studio-footer-text-color);
+}
+
+.name-work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.app {
+  color: var(--contacts-features-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
