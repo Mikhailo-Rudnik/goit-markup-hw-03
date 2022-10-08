@@ -21,6 +21,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -35,6 +37,7 @@ img {
 }
 
 .container {
+  outline: 2px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -121,9 +124,10 @@ img {
 /* Герой */
 .hero {
   outline: 2px solid tomato;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--hero-bcg-color-footer);
-
   text-align: center;
 }
 
@@ -141,6 +145,10 @@ img {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+  border: transparent;
+  border-radius: 4px;
+
   background-color: var(--acctnt-color);
   color: var(--hero-studio-footer-text-color);
 
@@ -177,6 +185,13 @@ img {
   overflow: hidden;
 }
 
+.features-list {
+  padding-top: 134px;
+  /* padding-bottom: 94px; */
+  display: flex;
+  gap: 30px;
+}
+
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -198,6 +213,9 @@ img {
 
 /* Чим ми займаємося*/
 .work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--features-bcg-color);
 }
 
@@ -211,8 +229,16 @@ img {
   text-align: center;
 }
 
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
 /* Команда */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--team-bcg-color);
 }
 
@@ -224,6 +250,11 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team-name {
@@ -238,7 +269,7 @@ img {
 
 .team-job {
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 
   color: var(--contacts-features-text-color);
 
@@ -250,7 +281,15 @@ img {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--hero-bcg-color-footer);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .logo-studiofooter {
@@ -267,15 +306,19 @@ img {
 }
 
 .google {
-  color: var(--hero-studio-footer-text-color);
+  display: inline-block;
+  padding-bottom: 9px;
 
+  color: var(--hero-studio-footer-text-color);
   line-height: 1.71;
 }
 
 .mail-address,
 .tel-address {
-  color: var(--footer-contacts-color);
+  display: inline-block;
+  padding-bottom: 9px;
 
+  color: var(--footer-contacts-color);
   line-height: 1.71;
 }
 
@@ -290,10 +333,25 @@ img {
 
 /* ПОРТФОЛІО */
 
+.section-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .button {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+
   background-color: var(--team-bcg-color);
   color: inherit;
-
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -308,7 +366,21 @@ img {
   color: var(--hero-studio-footer-text-color);
 }
 
+.working-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .name-work {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -316,8 +388,12 @@ img {
 }
 
 .app {
-  color: var(--contacts-features-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 24px;
 
+  color: var(--contacts-features-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
