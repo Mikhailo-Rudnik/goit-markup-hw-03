@@ -9,6 +9,7 @@
   --features-bcg-color: #f5f5f5;
   --team-bcg-color: #f5f4fa;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --border: #eeeeee;
 }
 
 body {
@@ -37,7 +38,6 @@ img {
 }
 
 .container {
-  outline: 2px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -47,6 +47,10 @@ img {
 
 /* header */
 
+.header-border {
+  border: var(--border);
+}
+
 .header-line {
   display: flex;
   align-items: center;
@@ -54,7 +58,6 @@ img {
 
 .logo {
   color: var(--acctnt-color);
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -63,7 +66,6 @@ img {
 
 .logo-studioheader {
   color: var(--logo-studio-header-color);
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -72,11 +74,8 @@ img {
 
 .nav-site {
   display: flex;
+  gap: 50px;
   margin-left: 93px;
-}
-
-.nav-site .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav-link {
@@ -122,8 +121,8 @@ img {
 }
 
 /* Герой */
+
 .hero {
-  outline: 2px solid tomato;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -167,6 +166,11 @@ img {
 
 /* Наші переваги */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features {
   background-color: var(--features-bcg-color);
 }
@@ -186,8 +190,6 @@ img {
 }
 
 .features-list {
-  padding-top: 134px;
-  /* padding-bottom: 94px; */
   display: flex;
   gap: 30px;
 }
@@ -213,9 +215,6 @@ img {
 
 /* Чим ми займаємося*/
 .work {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--features-bcg-color);
 }
 
@@ -236,9 +235,6 @@ img {
 
 /* Команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--team-bcg-color);
 }
 
@@ -257,8 +253,15 @@ img {
   gap: 30px;
 }
 
+.card {
+  padding: 30px 62px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 0;
 
   font-weight: 500;
@@ -269,10 +272,9 @@ img {
 
 .team-job {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   color: var(--contacts-features-text-color);
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -333,11 +335,6 @@ img {
 
 /* ПОРТФОЛІО */
 
-.section-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button-list {
   display: flex;
   gap: 8px;
@@ -376,10 +373,16 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
-.name-work {
+.projects {
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.name-work {
+  margin-top: 0;
   margin-bottom: 0;
   padding-left: 24px;
+  padding-right: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -390,8 +393,8 @@ img {
 .app {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 
   color: var(--contacts-features-text-color);
   font-weight: 400;
