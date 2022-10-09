@@ -48,7 +48,7 @@ img {
 /* header */
 
 .header-border {
-  border: var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .header-line {
@@ -371,6 +371,9 @@ img {
 
 .gallery-item {
   width: calc((100% - 60px) / 3);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .projects {
